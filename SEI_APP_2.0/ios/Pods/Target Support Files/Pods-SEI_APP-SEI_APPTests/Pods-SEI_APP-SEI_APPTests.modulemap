@@ -1,0 +1,6 @@
+module Pods_SEI_APP_SEI_APPTests {
+  umbrella header "Pods-SEI_APP-SEI_APPTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

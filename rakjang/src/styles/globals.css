@@ -1,0 +1,235 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,800;1,900&display=swap');
+@import "~react-image-gallery/styles/css/image-gallery.css";
+@import "react-slideshow-image/dist/styles.css";
+@import 'react-toastify/dist/ReactToastify.css';
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-family: 'Kanit', sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+.textlinear{
+  
+  background: -webkit-linear-gradient(#5BCA13,#177B00,#000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+
+}
+.bgglassblack{
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), rgba(59, 53, 53, 0.6);
+  
+
+}
+.indicator {
+  cursor: pointer;
+  padding: 6px;
+  margin-left: 4px;
+  text-align: center;
+  border: 1px #3C733F;
+  background: #C4C4C4;
+  
+}
+
+.indicator.active {
+  color: #676767;
+  background: #3C733F;
+}
+.bglinearsecsion{
+  background: radial-gradient(99.14% 464.16% at 0% 50%, rgba(33, 178, 0, 0.3) 4.47%, rgba(91, 202, 19, 0.3) 31.08%, rgba(255, 255, 255, 0.3) 57.42%), #FFFFFF;
+}
+.decoratecard{
+ 
+
+  
+  
+  background: linear-gradient(180deg, #255B02 0%, #70CB35 100%);
+  
+ 
+
+}
+.addtobasketbutton{
+  background: linear-gradient(253.58deg, #71CC35 1.55%, #21B200 38.76%, #177B00 95.8%);
+}
+
+.bgourteam{
+  background: linear-gradient(179.57deg, #FFFFFF 13.76%, #EBF5E9 99.63%);
+}
+.blur{
+  background: radial-gradient(83.22% 205.67% at 0% 54.53%, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.12) 100%);
+backdrop-filter: blur(100px);
+}
+.box{
+  background: #FFFFFF;
+border: 0.5px solid #C4C4C4;
+box-sizing: border-box;
+box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 2px 2px rgba(0, 0, 0, 0.25);
+/* filter: blur(5px); */
+
+
+border-radius: 10px;
+}
+.loginblog{
+  background: #FFFFFF;
+
+
+
+box-sizing: border-box;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+border-radius: 10px;
+}
+
+/* navwallet */
+.topnav {
+  overflow: hidden;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px #E5E5E5;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #676767;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-bottom: 4px solid transparent;
+  
+}
+
+.topnav a:hover {
+  border-bottom: 4px solid #21B200;
+  
+}
+
+.topnav a.active {
+  border-bottom: 4px solid #21B200;
+  
+}
+.cardwallet{
+  background: #FFFFFF;
+box-shadow: 0px 4px 4px #E5E5E5;
+}
+
+.shadowModal{
+  box-shadow: -4px -4px 20px #C4C4C4, 4px 4px 20px #C4C4C4;
+}
+
+
+/* image-gallery */
+
+.image-gallery {
+  width: 100%;
+  height: auto;
+  background: #eee;
+}
+
+/* .image-gallery-slide img {
+  width: 100%;
+  height: auto;
+  max-height: 80vh;
+  object-fit: cover;
+  overflow: hidden;
+  object-position: center center;
+} */
+
+.fullscreen .image-gallery-slide img {
+  height: 100vh;
+  max-height: 100vh;
+  background-color: #eee;
+}
+.image-gallery-slide img {
+  width: 100%;
+  height: 450px;
+  object-fit: contain;
+  overflow: hidden;
+  object-position: center center;
+  background-color: #fff;
+}
+
+.image-gallery-thumbnail img {
+  width: auto;
+  height: 75px;
+  object-fit: contain;
+  background-color: #eee;
+  overflow-y: scroll;
+  
+}
+.slick-dots li.slick-active button:before {
+  color: #177B00 !important;
+  font-size: 10px;
+}
+
+.slick-dots li button:before {
+  font-size: 10px !important;
+}
+
+.slider {
+  position: relative;
+}
+.slider::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 10000%;
+  height: 100%;
+}
+
+/* .image-gallery {
+  height: 100%;
+  width: 100%;
+} */
+
+/* .image-gallery-content .image-gallery-slide .image-gallery-image {
+  max-height: 100vh;
+  height: 100%;
+  width: 100%;
+
+  background-color: rgb(50, 50, 50);
+} */
+
+/* .image-gallery-slide img {
+  width: 100%;
+  height: 1000px;
+  width: 1080px;
+  height: 1920px; 
+  max-height: 1000px; 
+  object-fit: cover;
+  overflow: hidden;
+  object-position: center center;
+} */
+
+/* .fullscreen .image-gallery-slide img {
+  max-height: 100vh;
+}
+
+.image {
+  clear: both;
+  text-align: center;
+  margin: 1em auto;
+  position: relative;
+} */
+
+/* .image.image_resized {
+  max-width: 100%;
+  display: block;
+  box-sizing: border-box;
+} */
